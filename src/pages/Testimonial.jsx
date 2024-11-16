@@ -22,26 +22,31 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="bg-[#F58220] text-white py-10 px-5 mt-20" id="poppinsFont">
+    <div className="bg-[#F58220] text-white py-10 px-5 mt-20 h-[793px]" id="poppinsFont">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-8">
+        <div className="flex">
+        <div className="relative h-[442px] w-[526px] overflow-hidden">
+          <img src={BG} alt="" className="absolute object-cover rounded-md"/>
+        </div>
+        <h1 className="text-3xl md:text-4xl font-bold mb-8 mt-10 ml-20 w-[30vw] text-start" id="displayFont">
           500+ Happy clients said to us they are satisfied
         </h1>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+        </div>
+        <div className="relative flex flex-col md:flex-row items-center justify-center gap-6 -top-60 left-60">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white text-black rounded-lg shadow-lg p-6 pt-20 w-full md:w-1/2"
+              className=" bg-white text-black rounded-3xl shadow-lg p-6 pt-20 max-w-[453.01px] h-[296px] md:w-1/2 border-2 border-[#E6E6E6]"
             >
-              <div className="relative">
+              <div className="relative mb-2">
                 <h1 className="text-[200px] absolute -top-28 text-[#DEDEDE] italic">
                   "
                 </h1>
-              </div>{" "}
-              <p className="text-sm font-medium italic mb-4 text-[#838383]">
+              </div>
+              <p className="text-sm font-medium italic mb-10 text-[#838383] px-5 text-start">
                 {testimonial.text}
               </p>
-              <hr className="border-[1px] border-[#EDEDED ]" />
+              <hr className="border-[1px] border-[#EDEDED] mb-6" />
               <div className="flex items-center mt-4">
                 <img
                   src={testimonial.avatar}
@@ -56,7 +61,7 @@ const Testimonial = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-6 space-x-2">
+        <div className="flex relative -top-20 justify-center mt-6 space-x-2">
           <span className="w-3 h-3 bg-white rounded-full"></span>
           <span className="w-3 h-3 bg-[#FB9E4F] rounded-full"></span>
           <span className="w-3 h-3 bg-[#FB9E4F] rounded-full"></span>
