@@ -15,7 +15,15 @@ function ScrollTexts() {
   ];
   return (
     <div className="overflow-hidden bg-white py-4">
-      <div className="flex animate-marquee items-center space-x-8">
+      {/* <div className="flex animate-marquee items-center space-x-8"> */}
+      <div
+        className="flex items-center space-x-8"
+        style={{
+          animation: `marquee ${
+            window.innerWidth < 768 ? "5s" : "20s"
+          } linear infinite`,
+        }}
+      >
         {[...data, ...data].map((item, index) => (
           <div key={index} className="flex items-center space-x-2 shrink-0">
             <img

@@ -1,5 +1,6 @@
 import './App.css';
 import AppointmentPage from './pages/AppointmentPage';
+import FAQ from './pages/FAQ';
 import Footer from './pages/Footer';
 import HomePage1 from './pages/HomePage1';
 import HomePage2 from './pages/HomePage2';
@@ -18,6 +19,7 @@ function App() {
       <ScrollTexts/>
       <Testimonial/>
       <Insurance/>
+      <FAQ/>
       <Footer/>
     </>
   );

@@ -25,20 +25,20 @@ function Insurance() {
     <div className="py-12 my-10" id="displayFont">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
-        <h2 className="text-5xl font-bold text-center text-[#011016]">
+        <h2 className="text-3xl lg:text-5xl font-bold text-center text-[#011016]">
           Our Insurance Partners
         </h2>
-        <p className="mt-4 text-center text-[#9E9E9E]">
+        <p className="text-xs lg:text-base mt-4 text-center text-[#9E9E9E]">
           Conveniently pay for your dental treatments with your insurance.
           <br />
           We accept major insurance providers.
         </p>
 
-        <div className="mt-10 grid grid-cols-6 gap-0">
-          {logos.slice(0, 6).map((logo) => (
+        <div className="mt-10 grid grid-cols-3 lg:grid-cols-6 gap-1 lg:gap-2">
+          {logos.map((logo) => (
             <div
               key={logo.id}
-              className="flex justify-center items-center p-4 border border-[#E7E7E7] bg-white shadow-sm h-[123px] w-[198px] m-0"
+              className="flex justify-center items-center p-4 border border-[#E7E7E7] bg-white shadow-sm lg:h-[123px] lg:w-[198px] m-0"
             >
               <img
                 src={logo.src}
@@ -47,27 +47,6 @@ function Insurance() {
               />
             </div>
           ))}
-        </div>
-
-        <div className=" grid grid-cols-6 m-0">
-          <div></div>
-          <div></div>
-
-          {logos.slice(6, 9).map((logo) => (
-            <div
-              key={logo.id}
-              className="flex justify-center items-center p-4 bg-white shadow-sm h-[123px] w-[198px] border border-[#E7E7E7] m-0"
-            >
-              <img
-                src={logo.src}
-                alt={logo.alt}
-                className="h-12 object-contain"
-              />
-            </div>
-          ))}
-
-          <div></div>
-          <div></div>
         </div>
       </div>
     </div>

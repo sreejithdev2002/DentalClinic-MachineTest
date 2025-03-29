@@ -10,9 +10,9 @@ function HomePage1() {
     <>
       <Navbar />
       <div className="bg-gray-50">
-        <div className="absolute left-32 bottom-[15vw]">
+        <div className="absolute left-10 lg:left-32 lg:bottom-[15vw]">
           <h1
-            className="text-7xl font-bold w-[35vw] tracking-wider"
+            className="text-2xl lg:text-7xl font-bold w-[35vw] tracking-wider"
             id="displayFont2"
           >
             Have a shining smile with our{" "}
@@ -21,8 +21,8 @@ function HomePage1() {
           <img
             src={googleImage}
             alt="Google rating card"
-            width={230}
-            className="mt-10 relative right-2"
+            // width={230}
+            className="w-[150px] lg:w-[230px] mt-6  lg:mt-10 relative right-2"
           />
         </div>
         <div className="flex justify-end items-end w-screen">

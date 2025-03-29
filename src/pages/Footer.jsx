@@ -4,12 +4,12 @@ import map from "../images/map.png";
 
 function Footer() {
   return (
-    <div className="bg-[#011016] pt-20 pb-2 px-20 text-white" id="displayFont">
+    <div className="bg-[#011016] p-10 lg:p-20 pb-5 lg:pb-10 text-white" id="displayFont">
       <div className="mb-5">
         <img src={Logo} alt="" />
       </div>
-      <div className="grid grid-cols-4 items-start">
-        <div className="p-10">
+      <div className="grid grid-cols-1 lg:grid-cols-4 items-start">
+        <div className="pt-5 lg:p-10">
           <h1  className="text-[26px] font-medium">Get In Touch</h1>
           <br />
           <p>Contact Number</p>
@@ -21,7 +21,7 @@ function Footer() {
           <br />
           <p>info@smiledentaldubai.com</p>
         </div>
-        <div className="p-10">
+        <div className="pt-5 lg:p-10">
           <h1  className="text-[26px] font-medium">Our Address</h1>
           <br />
           <p>
@@ -34,7 +34,7 @@ function Footer() {
             <img src={map} alt="" className="relative object-cover -top-10" />
           </div>
         </div>
-        <div className="p-10 flex flex-col px-20">
+        <div className="pt-5 lg:p-10 flex flex-col">
           <h1  className="text-[26px] font-medium">Quick Links</h1>
           <br />
           <ul>
@@ -58,8 +58,8 @@ function Footer() {
             </a>
           </ul>
         </div>
-        <div className="p-10 flex flex-col">
-          <h1 className="text-[26px] font-medium">Quick Links</h1>
+        <div className="pt-5 lg:p-10 flex flex-col">
+          <h1 className="text-[26px] font-medium">Departments</h1>
           <br />
           <ul>
             <a href="#">
@@ -70,7 +70,7 @@ function Footer() {
             </a>
           </ul>
           <br />
-          <h1  className="text-[26px] font-medium">Quick Links</h1>
+          <h1  className="text-[26px] font-medium">Info</h1>
           <br />
           <ul>
             <a href="#">
@@ -82,8 +82,8 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <hr className="border border-[#233E48]"/>
-      <p className="text-[#233E48] text-sm text-center m-10">@copyright all reserved by Smile Essentials - Powered by Hoztox Technologies</p>
+      <hr className="border border-[#233E48] mt-10"/>
+      <p className="text-[#233E48] text-xs lg:text-sm text-center m-5 lg:m-10">@copyright all reserved by Smile Essentials - Powered by Hoztox Technologies</p>
     </div>
   );
 }

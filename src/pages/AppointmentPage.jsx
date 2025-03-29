@@ -10,7 +10,7 @@ function AppointmentPage() {
       info: "Cleaning Polishing, Teeth Whitening and Comprehensive Consultation",
       rate: "599 AED",
       style: "scale-[115%] top-2",
-      style1: "text-start w-[28vw]",
+      style1: "text-start lg:w-[28vw]",
       style2: "px-16",
       features: {
         one: "Flash Tooth Whitening System for 1 Hour",
@@ -48,38 +48,39 @@ function AppointmentPage() {
   ];
 
   return (
-    <div className="p-20 mt-28">
-      <div className="flex items-center" id="displayFont">
-        <h1 className="text-5xl font-bold">
+    <div className="p-10 lg:p-20 lg:mt-10">
+      <div className="flex flex-col lg:flex-row items-start lg:items-center" id="displayFont">
+        <h1 className="text-3xl lg:text-5xl font-bold">
           Exclusive <br /> Monthly Dental Offers
         </h1>
-        <p className="text-lg text-[#9E9E9E] ml-40 w-[28vw]">
+        <p className="text-xs lg:text-lg text-[#9E9E9E] ml-0 lg:ml-40 lg:w-[28vw]">
           Unlock your smile’s potential with our exclusive dental offers for
           this month
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-4 mt-10 ">
-        {appointmentData.map((data) => (
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-10 ">
+        {appointmentData.map((data, index) => (
           <div
-            className="bg-white shadow-lg rounded-sm flex flex-col items-center p-5 justify-start h-[679px] w-[433px]"
+            key={index}
+            className="bg-white shadow-lg rounded-sm flex flex-col items-center p-5 justify-start lg:h-[679px] lg:w-[433px]"
             id="displayFont"
           >
-            <div className="relative overflow-hidden rounded-md min-w-[395px] min-h-[183px]">
+            <div className="relative overflow-hidden rounded-md w-full min-h-[140px] lg:min-w-[395px] lg:min-h-[180px]">
               <img
                 src={data.image}
                 alt=""
                 className={`absolute object-cover ${data.style}`}
               />
             </div>
-            <div className="h-24 flex items-center justify-center">
+            <div className="lg:h-24 flex lg:items-center lg:justify-center">
               <h3
-                className={`py-4 px-8 text-xl ${data.style1} font-medium text-[#011016]`}
+                className={`py-4 px-2 lg:px-8 lg:text-xl ${data.style1} font-medium text-[#011016]`}
               >
                 {data.info}
               </h3>
             </div>
             <div className="h-20">
-              <h1 className="text-[42px] text-[#F58820] font-semibold">
+              <h1 className="text-2xl lg:text-[42px] text-[#F58820] font-semibold">
                 {data.rate}
               </h1>
             </div>
@@ -96,8 +97,8 @@ function AppointmentPage() {
                 {data.features.three}
               </li>
             </ul>
-            <div className="flex justify-center mt-4">
-              <button className="bg-[#231F20] text-[22px] w-[298px] h-[50px] text-white rounded-md hover:bg-gray-800 font-medium">
+            <div className="flex justify-center mt-8 lg:mt-4">
+              <button className="bg-[#231F20] text-lg lg:text-xl w-[298px] h-[50px] text-white rounded-md hover:bg-gray-800 font-medium">
                 MAKE AN APPOINTMENT
               </button>
             </div>
