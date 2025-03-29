@@ -19,6 +19,7 @@ function HomePage1() {
             <span className="text-[#F58820]">modern methods!</span>
           </h1>
           <img
+            loading="lazy"
             src={googleImage}
             alt="Google rating card"
             // width={230}
@@ -26,11 +27,11 @@ function HomePage1() {
           />
         </div>
         <div className="flex justify-end items-end w-screen">
-          <img src={homepageImage} alt="" width={1000} className="" />
-          <HomepageCard/>
+          <img loading="lazy" src={homepageImage} alt="" width={1000} className="" />
+          <HomepageCard />
         </div>
       </div>
-      <MiddleDiv/>
+      <MiddleDiv />
       <div className="bg-[#011016] w-screen h-28"></div>
     </>
   );

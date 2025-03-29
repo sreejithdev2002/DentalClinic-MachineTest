@@ -22,15 +22,26 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="bg-[#F58220] text-white py-10 px-5 mt-20 lg:h-[793px]" id="poppinsFont">
+    <div
+      className="bg-[#F58220] text-white py-10 px-5 mt-20 lg:h-[793px]"
+      id="poppinsFont"
+    >
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex flex-col lg:flex-row">
-        <div className="relative h-[50vh] w-auto lg:h-[442px] lg:w-[526px] overflow-hidden">
-          <img src={BG} alt="" loading="lazy" className="absolute object-cover rounded-md"/>
-        </div>
-        <h1 className="text-3xl md:text-4xl font-bold mb-8 -mt-40 lg:mt-10 lg:ml-20 lg:w-[30vw] text-center lg:text-start" id="displayFont">
-          500+ Happy clients said to us they are satisfied
-        </h1>
+          <div className="relative h-[50vh] w-auto lg:h-[442px] lg:w-[526px] overflow-hidden">
+            <img
+              src={BG}
+              alt=""
+              loading="lazy"
+              className="absolute object-cover rounded-md"
+            />
+          </div>
+          <h1
+            className="text-3xl md:text-4xl font-bold mb-8 -mt-40 lg:mt-10 lg:ml-20 lg:w-[30vw] text-center lg:text-start"
+            id="displayFont"
+          >
+            500+ Happy clients said to us they are satisfied
+          </h1>
         </div>
         <div className="relative flex flex-col md:flex-row items-center justify-center gap-6 lg:-top-60 lg:left-60">
           {testimonials.map((testimonial) => (
@@ -49,6 +60,7 @@ const Testimonial = () => {
               <hr className="border-[1px] border-[#EDEDED] mb-6" />
               <div className="flex items-center mt-4">
                 <img
+                  loading="lazy"
                   src={testimonial.avatar}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full mr-4"

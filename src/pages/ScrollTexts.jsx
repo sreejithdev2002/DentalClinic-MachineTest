@@ -27,6 +27,7 @@ function ScrollTexts() {
         {[...data, ...data].map((item, index) => (
           <div key={index} className="flex items-center space-x-2 shrink-0">
             <img
+              loading="lazy"
               src={item.icon}
               alt={`${item.text} Icon`}
               className="w-6 h-6 mr-6"

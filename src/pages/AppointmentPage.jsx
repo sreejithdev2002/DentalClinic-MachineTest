@@ -49,7 +49,10 @@ function AppointmentPage() {
 
   return (
     <div className="p-10 lg:p-20 lg:mt-10">
-      <div className="flex flex-col lg:flex-row items-start lg:items-center" id="displayFont">
+      <div
+        className="flex flex-col lg:flex-row items-start lg:items-center"
+        id="displayFont"
+      >
         <h1 className="text-3xl lg:text-5xl font-bold">
           Exclusive <br /> Monthly Dental Offers
         </h1>
@@ -67,6 +70,7 @@ function AppointmentPage() {
           >
             <div className="relative overflow-hidden rounded-md w-full min-h-[140px] lg:min-w-[395px] lg:min-h-[180px]">
               <img
+                loading="lazy"
                 src={data.image}
                 alt=""
                 className={`absolute object-cover ${data.style}`}

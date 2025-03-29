@@ -8,23 +8,27 @@ function HomepageCard() {
     <div className="absolute bg-gray-200 w-[180px] lg:w-[15.6vw] p-5 rounded-md top-44 right-3 border-gray-100 border-2">
       <div className="mb-2 lg:mb-4">
         <h3 className="text-[#F58820] text-sm lg:text-base" id="displayFont">
-          <span className="font-bold text-sm lg:text-xl">15+</span> Expert Doctors
+          <span className="font-bold text-sm lg:text-xl">15+</span> Expert
+          Doctors
         </h3>
       </div>
       <div className="flex items-center justify-start">
         <img
+          loading="lazy"
           src={image2}
           alt=""
           width={50}
           className="w-[30px] lg:w-[50px] mx-1 mb-2 rounded-full"
         />
         <img
+          loading="lazy"
           src={image1}
           alt=""
           width={50}
           className="w-[30px] lg:w-[50px] mx-1 mb-2 rounded-full"
         />
         <img
+          loading="lazy"
           src={image3}
           alt=""
           width={50}

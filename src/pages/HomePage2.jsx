@@ -60,7 +60,7 @@ function HomePage2() {
       <div className="grid grid-cols-3 lg:grid-cols-5 gap-4 mt-10">
         {gridData.map((data, index) => (
           <div key={index} className="bg-[#FFFAF5] flex flex-col items-center justify-center p-3 lg:p-10">
-            <img src={data.image} alt={data.name} className="w-8 lg:w-20 h-auto mb-3 lg:mb-5"/>
+            <img loading="lazy" src={data.image} alt={data.name} className="w-8 lg:w-20 h-auto mb-3 lg:mb-5"/>
             <h2 className="font-semibold text-xs lg:text-base text-center">{data.name}</h2>
           </div>
         ))}

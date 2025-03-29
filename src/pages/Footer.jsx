@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="bg-[#011016] p-10 lg:p-20 pb-5 lg:pb-10 text-white" id="displayFont">
       <div className="mb-5">
-        <img src={Logo} alt="" />
+        <img loading="lazy" src={Logo} alt="" />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 items-start">
         <div className="pt-5 lg:p-10">
@@ -31,7 +31,7 @@ function Footer() {
           <br />
           <h1  className="text-[26px] font-medium mb-2">Location Map</h1>
           <div className="h-[116px] w-[334px] overflow-hidden rounded-[14px]">
-            <img src={map} alt="" className="relative object-cover -top-10" />
+            <img loading="lazy" src={map} alt="" className="relative object-cover -top-10" />
           </div>
         </div>
         <div className="pt-5 lg:p-10 flex flex-col">

@@ -41,6 +41,7 @@ function Insurance() {
               className="flex justify-center items-center p-4 border border-[#E7E7E7] bg-white shadow-sm lg:h-[123px] lg:w-[198px] m-0"
             >
               <img
+                loading="lazy"
                 src={logo.src}
                 alt={logo.alt}
                 className="h-12 object-contain"

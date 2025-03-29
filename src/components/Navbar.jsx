@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="flex flex-col lg:flex-row w-screen justify-between px-2 lg:px-10 py-5">
       <div>
-        <img src={logo} alt="Smile Essentials Dental Clinic Logo" width={150} />
+        <img loading="lazy" src={logo} alt="Smile Essentials Dental Clinic Logo" width={150} />
       </div>
       <div className="flex flex-col lg:flex-row">
         <ul
