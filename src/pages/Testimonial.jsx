@@ -26,7 +26,7 @@ const Testimonial = () => {
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex flex-col lg:flex-row">
         <div className="relative h-[50vh] w-auto lg:h-[442px] lg:w-[526px] overflow-hidden">
-          <img src={BG} alt="" className="absolute object-cover rounded-md"/>
+          <img src={BG} alt="" loading="lazy" className="absolute object-cover rounded-md"/>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-8 -mt-40 lg:mt-10 lg:ml-20 lg:w-[30vw] text-center lg:text-start" id="displayFont">
           500+ Happy clients said to us they are satisfied
@@ -39,7 +39,7 @@ const Testimonial = () => {
               className=" bg-white text-black rounded-xl lg:rounded-3xl shadow-lg p-2 lg:p-6 pt-5 lg:pt-20 max-w-[453.01px] lg:h-[296px] md:w-1/2 border-2 border-[#E6E6E6]"
             >
               <div className="relative mb-2">
-                <h1 className="text-5xl lg:text-[180px] absolute lg:top-5 text-[#DEDEDE] italic">
+                <h1 className="text-5xl lg:text-[180px] absolute lg:-top-12 text-[#DEDEDE] italic">
                   "
                 </h1>
               </div>
